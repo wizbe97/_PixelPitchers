@@ -18,3 +18,4 @@ MonoBehaviour:
   strength: 0
   accuracy: 0
   shotPower: 0
+  pointsRemaining: 100
