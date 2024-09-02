@@ -7,6 +7,8 @@ public class ObjectMover : MonoBehaviourPun
 {
     [SerializeField] private float moveSpeed = 5f;
     private Animator _animator;
+
+
     private void Awake()
     {
         _animator = GetComponent<Animator>();
@@ -19,7 +21,7 @@ public class ObjectMover : MonoBehaviourPun
             float x = Input.GetAxis("Horizontal");
             float y = Input.GetAxis("Vertical");
 
-            transform.position += new Vector3(x, y, 0) * moveSpeed;
+            transform.position += new Vector3(x, y, 0) * moveSpeed * Time.deltaTime;
         }
     }
 }
