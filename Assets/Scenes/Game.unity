@@ -261,7 +261,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9043424132608305421, guid: ed1609b18093f4879a7a3ed78e8cf46f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1321665574}
+    - targetCorrespondingSourceObject: {fileID: 9043424132608305421, guid: ed1609b18093f4879a7a3ed78e8cf46f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1321665573}
+    - targetCorrespondingSourceObject: {fileID: 9043424132608305421, guid: ed1609b18093f4879a7a3ed78e8cf46f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1321665579}
   m_SourcePrefab: {fileID: 100100000, guid: ed1609b18093f4879a7a3ed78e8cf46f, type: 3}
 --- !u!1 &517998694
 GameObject:
@@ -439,6 +448,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1321665572 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9043424132608305421, guid: ed1609b18093f4879a7a3ed78e8cf46f, type: 3}
+  m_PrefabInstance: {fileID: 157614595}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1321665573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321665572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
+--- !u!114 &1321665574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321665572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 1321665573}
+  sceneViewId: 1
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &1321665579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321665572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aecd684a5e5aa9b4b9755b859211a6ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1330146881
 PrefabInstance:
   m_ObjectHideFlags: 0
