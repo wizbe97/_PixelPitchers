@@ -87,6 +87,7 @@ public class PlayerListingsMenu : MonoBehaviourPunCallbacks
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
         AddPlayerListing(newPlayer);
+        UpdateRoomListings();
     }
 
     public override void OnPlayerLeftRoom(Player otherPlayer)
@@ -97,7 +98,16 @@ public class PlayerListingsMenu : MonoBehaviourPunCallbacks
             Destroy(_listings[index].gameObject);
             _listings.RemoveAt(index);
         }
+        UpdateRoomListings();
     }
+
+    private void UpdateRoomListings()
+    {
+        // Assuming RoomListingsMenu is in the same context
+        RoomListingsMenu roomListingsMenu = FindObjectOfType<RoomListingsMenu>();
+        roomListingsMenu.UpdateListings();
+    }
+
 
     public void OnClick_StartGame()
     {

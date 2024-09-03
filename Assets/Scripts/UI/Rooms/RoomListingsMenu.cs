@@ -60,4 +60,12 @@ public class RoomListingsMenu : MonoBehaviourPunCallbacks
             }
         }
     }
+    public void UpdateListings()
+    {
+        foreach (var listing in _listings)
+        {
+            listing.UpdatePlayerCount();
+        }
+    }
+
 }

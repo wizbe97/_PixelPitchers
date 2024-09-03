@@ -14,10 +14,17 @@ public class RoomListing : MonoBehaviour
     public void SetRoomInfo(RoomInfo roomInfo)
     {
         RoomInfo = roomInfo;
-        _text.text = roomInfo.MaxPlayers + ", " + roomInfo.Name;
+        UpdatePlayerCount();
     }
-    
-    public void OnClick_Button() {
+
+    public void UpdatePlayerCount()
+    {
+        int currentPlayers = RoomInfo.PlayerCount;
+        _text.text = $"({currentPlayers}/{RoomInfo.MaxPlayers}) {RoomInfo.Name}";
+    }
+
+    public void OnClick_Button()
+    {
         PhotonNetwork.JoinRoom(RoomInfo.Name);
     }
 }
