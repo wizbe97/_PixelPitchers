@@ -10,8 +10,8 @@ public class TestConnect : MonoBehaviourPunCallbacks
     void Start()
     {
         Debug.Log("Connecting to Photon...");
-        PhotonNetwork.SendRate = 20; //20 default
-        PhotonNetwork.SerializationRate = 5; // 10 default
+        PhotonNetwork.SendRate = 30;
+        PhotonNetwork.SerializationRate = 15;
         PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.NickName = MasterManager.GameSettings.NickName;
         PhotonNetwork.GameVersion = MasterManager.GameSettings.GameVersion;

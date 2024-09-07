@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 
 public class QuickInstantiate : MonoBehaviour
@@ -8,6 +7,11 @@ public class QuickInstantiate : MonoBehaviour
 
     private void Awake()
     {
-        MasterManager.NetworkInstantiate(_prefabToInstantiate, transform.position, Quaternion.identity);
+        // Only instantiate on the MasterClient
+        if (PhotonNetwork.IsMasterClient)
+        {
+            // Master client instantiates the object
+            MasterManager.NetworkInstantiate(_prefabToInstantiate, transform.position, Quaternion.identity);
+        }
     }
 }
