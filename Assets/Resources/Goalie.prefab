@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 6533350993241052449}
   - component: {fileID: 109250255285147171}
   - component: {fileID: 4777252416832183734}
-  - component: {fileID: 7534191079415338893}
-  - component: {fileID: 2190707540579557887}
-  - component: {fileID: -2675580236452728899}
-  - component: {fileID: 2790202820829813242}
+  - component: {fileID: 2699877868612688066}
+  - component: {fileID: 1756138638875460257}
+  - component: {fileID: 6202554224631615695}
+  - component: {fileID: -7574791438463847012}
   m_Layer: 0
-  m_Name: Defender 1
+  m_Name: Goalie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,7 +110,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!50 &7534191079415338893
+--- !u!50 &2699877868612688066
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -137,7 +137,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2190707540579557887
+--- !u!114 &1756138638875460257
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,9 +149,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a74066b8e572774e82694859b8cc943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerStats: {fileID: 11400000, guid: d905ff91ebdcb4268bd0351f7c9395e2, type: 2}
+  playerStats: {fileID: 11400000, guid: 0f684379d81177c4995685bbf692c806, type: 2}
   radius: 10
---- !u!114 &-2675580236452728899
+--- !u!114 &6202554224631615695
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,12 +170,12 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
-  - {fileID: 2190707540579557887}
-  - {fileID: 2790202820829813242}
+  - {fileID: 1756138638875460257}
+  - {fileID: -7574791438463847012}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &2790202820829813242
+--- !u!114 &-7574791438463847012
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

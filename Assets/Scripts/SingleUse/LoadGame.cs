@@ -7,6 +7,9 @@ public class LoadGame : MonoBehaviour
 {
     public void OnClick_LoadGame()
     {
-        PhotonNetwork.LoadLevel(2);
+        if (PhotonNetwork.IsMasterClient)
+        {
+            PhotonNetwork.LoadLevel(2);
+        }
     }
 }
